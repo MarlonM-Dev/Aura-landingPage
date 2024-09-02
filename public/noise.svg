@@ -1,0 +1,9 @@
+ <svg>
+      <filter id="noiseFilter">
+        <feTurbulence
+          type="fractalNoise"
+          baseFrequency="20"
+          stitchTiles="stitch"
+        />
+      </filter>
+    </svg>

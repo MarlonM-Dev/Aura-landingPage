@@ -1,0 +1,131 @@
+/* .footer {
+    display: flex;
+    flex-direction: row;
+} */
+
+.footer-container {
+    max-width: 80rem;
+    padding: 1.5rem 2rem 3rem;
+    margin: 0 auto;
+}
+
+.footer-top {
+    border-top: 1px solid var(--slate-dark);
+    padding-top: var(--size-base);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 2rem;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.footer-top::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    z-index: -999;
+    height: 10em;
+    background-color: var(--accent);
+    opacity: .2;
+    left: 0;
+    filter: blur(180px);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-link {
+    display: flex;
+    height: var(--size-2xl);
+    width: var(--size-2xl);
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-dark);
+    transition: color 0.2s ease-in-out;
+}
+
+.social-link:hover {
+    color: var(--accent);
+}
+
+.x-icon {
+    height: var(--size-base);
+    width: var(--size-base);
+}
+
+.linkedin-icon,
+.facebook-icon {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--size-base);
+    font-size: 0.75rem;
+    text-align: center;
+    font-size: var(--size-xs);
+}
+
+.company-info p {
+    margin: 0;
+    color: var(--slate-dark);
+    font-size: var(--size-xs);
+}
+
+.legal-links {
+    display: flex;
+    gap: var(--size-base);
+}
+
+.legal-link {
+    color: var(--accent-dark);
+    transition: color 0.2s ease-in-out;
+    font-size: var(--size-xs);
+}
+
+.legal-link:hover {
+    color: var(--accent);
+}
+
+.footer-bottom {
+    margin-top: var(--size-base);
+    width: 100%;
+    color: var(--slate-dark);
+    font-size: var(--size-xs);
+    text-align: center;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banking-info {
+    margin-top: 0.5rem;
+}
+
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
