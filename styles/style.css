@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 :root {
   --dark: hsl(215, 100%, 96%);
   --light: hsl(210, 11%, 4%);
@@ -34,7 +36,7 @@ html {
 
 body {
   margin-top: 2em;
-  font-family: Manrope, Arial, Helvetica, sans-serif;
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
   color: var(--dark);
   overflow-x: hidden;
   background-color: var(--light);
