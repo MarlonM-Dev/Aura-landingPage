@@ -5,8 +5,9 @@ header {
 
 nav {
     border-radius: 8em;
-    box-shadow: inset 0px 0px 2px grey;
+    box-shadow: inset 0px 0px 2px var(--secondaryHi);
     /* backdrop-filter: blur(8px); */
+    box-shadow: inset 0px 0px 20px var(--secondary);
     z-index: 999;
 }
 

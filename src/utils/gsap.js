@@ -15,25 +15,6 @@ gsap.fromTo(
   }
 );
 
-gsap.fromTo(
-  ".about__title, .about__description",
-  {
-    y: -100,
-    opacity: 0,
-  },
-  {
-    y: 0,
-    opacity: 1,
-    scrollTrigger: {
-      trigger: ".about__title",
-      start: "0% center",
-      end: "bottom center",
-
-      scrub: 1,
-    },
-  }
-);
-
 const learnMore = document.querySelector(".hero__cta");
 
 learnMore.addEventListener("mouseover", () => {
@@ -50,16 +31,16 @@ learnMore.addEventListener("mouseout", () => {
   });
 });
 
-function animateOnScroll(target, trigger) {
+function animateOnScroll(target, trigger, overlay) {
   gsap.fromTo(
     target,
     {
-      y: -200,
+      y: -100,
       opacity: 0,
     },
     {
       y: 0,
-      opacity: 1,
+      opacity: overlay,
       scrollTrigger: {
         trigger: trigger,
         start: "top 80%",
@@ -70,7 +51,9 @@ function animateOnScroll(target, trigger) {
   );
 }
 
-animateOnScroll(".hero", ".hero");
-animateOnScroll(".about", ".about");
-animateOnScroll(".services", ".services");
-animateOnScroll(".contact", ".contact");
+animateOnScroll(".hero", ".hero", 1);
+animateOnScroll(".hero__img", ".hero__img", 1);
+animateOnScroll(".overlay", ".overlay", 0.1);
+animateOnScroll(".about", ".about", 1);
+animateOnScroll(".services", ".services", 1);
+animateOnScroll(".contact", ".contact", 1);
